@@ -1,12 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function Trial() {
+    function trialFunc() {
+        return -1;
+    }
     return (
         <div>
-            <h1>Hello, World</h1>
+            <h1>
+                Hello, World! {trialFunc() === -1 ? 
+                <span>It is -1 degree</span>
+                :
+                <span>It is not -1 degree</span>
+                }
+            </h1>
         </div>
     )
 }
 
-export default App;
+export default Trial;
